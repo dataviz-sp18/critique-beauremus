@@ -1,0 +1,12 @@
+---
+title: "Grammar"
+author: "Beau Harrison"
+date: "April 10, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Part 2: `ggplot2` and the grammar of graphics
