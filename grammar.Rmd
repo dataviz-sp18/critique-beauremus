@@ -7,6 +7,17 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
 ```
 
 # Part 2: `ggplot2` and the grammar of graphics
+
+```{r}
+cerealInit <- read.csv("cereal.csv", sep=";")
+classes <- sapply(cerealInit, class)
+cereal <- read.csv("cereal.csv", sep=";", colClasses = classes)
+str(cereal)
+
+ggplot(data = cereal) +
+  geom_point(aes(x = sugars, y = calories))
+```
